@@ -5,20 +5,20 @@ import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
-import {removeFromFav} from "../actions/search.action";
+import {removeFromList} from "../actions/search.action";
 import {connect} from "react-redux";
 
-let FavouriteItemsComponent = ({favItems, removeFromFav}) => {
+let ItemListComponent = ({selectedItems, removeFromList}) => {
   const sumItems = () => {
-    return favItems.map(e => e.sellingMode.price.amount).reduce((total, e) => total + Number.parseFloat(e), 0).toFixed(2);
+    return selectedItems.map(e => e.sellingMode.price.amount).reduce((total, e) => total + Number.parseFloat(e), 0).toFixed(2);
   };
   return (
     <Container>
-      <Title>Fav items ({sumItems()} zł)</Title>
+      <Title>Shopping list ({sumItems()} zł)</Title>
       <ItemList>
-        {favItems.map(e =>
+        {selectedItems.map(e =>
           <CSSTransition key={e.id} timeout={300} classNames="fade">
-            <ItemComponent item={e} handleItemClick={removeFromFav}/>
+            <ItemComponent item={e} handleItemClick={removeFromList}/>
           </CSSTransition>
         )}
       </ItemList>
@@ -48,13 +48,13 @@ const Container = styled.div`
   `;
 
 const mapStateToProps = (state) => ({
-  favItems: state.search.favItems
+  selectedItems: state.search.selectedItems
 });
 
 const mapDispatchToProps = {
-  removeFromFav
+  removeFromList
 };
 
-FavouriteItemsComponent = connect(mapStateToProps, mapDispatchToProps)(FavouriteItemsComponent);
+ItemListComponent = connect(mapStateToProps, mapDispatchToProps)(ItemListComponent);
 
-export default FavouriteItemsComponent;
+export default ItemListComponent;

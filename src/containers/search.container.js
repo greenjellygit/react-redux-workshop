@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import ItemComponent from "../components/item.component";
 import {Redirect} from "react-router-dom";
 import styled from "styled-components";
-import FavouriteItemsComponent from "../components/favourite-items.component";
+import ItemListComponent from "../components/item-list.component";
 import SpinnerComponent from "../components/spinner.component";
-import {addToFav, clearItems, findItems, removeFromFav} from "../actions/search.action";
+import {addToList, clearItems, findItems, removeFromList} from "../actions/search.action";
 import {connect} from "react-redux";
 
 class SearchContainer extends Component {
@@ -29,10 +29,10 @@ class SearchContainer extends Component {
   };
 
   handleItemClick = (item) => {
-    if (!this.props.favItems.map(e => e.id).includes(item.id)) {
-      this.props.addToFav(item);
+    if (!this.props.selectedItems.map(e => e.id).includes(item.id)) {
+      this.props.addToList(item);
     } else {
-      this.props.removeFromFav(item);
+      this.props.removeFromList(item);
     }
   };
 
@@ -43,7 +43,7 @@ class SearchContainer extends Component {
 
     return (
       <Container>
-        <FavouriteItemsComponent/>
+        <ItemListComponent/>
         <SearchPanelContainer>
           <h1>Find what you want!</h1>
           <form onSubmit={this.onSubmit}>
@@ -88,15 +88,15 @@ const ItemList = styled.div`
 const mapStateToProps = state => ({
   items: state.search.items,
   totalCount: state.search.totalCount,
-  favItems: state.search.favItems,
+  selectedItems: state.search.selectedItems,
   isAuthenticated: state.authenticate.isAuthenticated,
 });
 
 const mapDispatchToProps = {
   findItems,
   clearItems,
-  addToFav,
-  removeFromFav,
+  addToList,
+  removeFromList,
 };
 
 SearchContainer = connect(mapStateToProps, mapDispatchToProps)(SearchContainer);

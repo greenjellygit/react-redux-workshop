@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d76fd052-d6b3-42ff-b111-418eaa248f4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Root.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/authenticate.action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/search.action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/ui.action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/favourite-items.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/spinner.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/clients.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/interceptors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/properties.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/auth.container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/authenticate.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/search.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/ui.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Root.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/search.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/search.action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/favourite-items.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/search.container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/search.container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/search.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/search.reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,37 +79,79 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="126" />
+          <entry key="js" value="130" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="126" />
+          <entry key="JavaScript" value="130" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2614" />
+          <entry key="js" value="2628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2614" />
+          <entry key="JavaScript" value="2628" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/item-list.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/search.reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/search.action.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/search.container.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,10 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pau</find>
-      <find>base</find>
-      <find>payload</find>
-      <find>paz</find>
       <find>app.</find>
       <find>maxW</find>
       <find>,</find>
@@ -173,16 +189,23 @@
       <find>const mapStateToProps \= \(state\) \=\&gt; \{\}\;\n</find>
       <find>mapStateToProps</find>
       <find>dela</find>
-      <find>removeFromFav</find>
       <find>name</find>
       <find>totalC</find>
       <find>totalCount</find>
       <find>selectedItems</find>
+      <find>favItems</find>
+      <find>removeFromFav</find>
+      <find>Shopping list</find>
+      <find>fav</find>
+      <find>removeFromF</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
       <replace>favItems</replace>
       <replace>props.name</replace>
+      <replace>selectedItems</replace>
+      <replace>removeFromList</replace>
+      <replace>addToList</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Jelly\Desktop\nauka\react\my-app\node_modules\axios</dir>
@@ -235,14 +258,15 @@
         <option value="$PROJECT_DIR$/src/containers/auth.container.js" />
         <option value="$PROJECT_DIR$/src/components/item.component.js" />
         <option value="$PROJECT_DIR$/src/components/favourite-items.component.js" />
-        <option value="$PROJECT_DIR$/src/actions/search.action.js" />
-        <option value="$PROJECT_DIR$/src/containers/search.container.js" />
         <option value="$PROJECT_DIR$/src/reducers/search.reducer.js" />
         <option value="$PROJECT_DIR$/src/actions/authenticate.action.js" />
         <option value="$PROJECT_DIR$/src/setupProxy.js" />
         <option value="$PROJECT_DIR$/src/config/interceptors.js" />
         <option value="$PROJECT_DIR$/src/config/clients.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/actions/search.action.js" />
+        <option value="$PROJECT_DIR$/src/components/item-list.component.js" />
+        <option value="$PROJECT_DIR$/src/containers/search.container.js" />
       </list>
     </option>
   </component>
@@ -305,7 +329,25 @@
               <item name="my-app-redux" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-app-redux" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app-redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app-redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app-redux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app-redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,7 +359,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550435105534" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550514078352" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -412,12 +454,12 @@
       <workItem from="1550091038029" duration="8388000" />
       <workItem from="1550266907944" duration="25472000" />
       <workItem from="1550358960445" duration="16811000" />
-      <workItem from="1550403667660" duration="24769000" />
+      <workItem from="1550403667660" duration="25554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75440000" />
+    <option name="totallyTimeSpent" value="76225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -691,33 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/search.reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/favourite-items.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/search.container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -725,13 +740,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/search.action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -779,6 +787,40 @@
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/search.reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/search.action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/item-list.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/search.container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
