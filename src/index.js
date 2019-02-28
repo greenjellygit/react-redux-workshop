@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
-import Root from './Root';
+import './index.scss';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from "react-redux";
 import {applyMiddleware, compose, createStore} from "redux";
@@ -36,7 +36,7 @@ clientsList.forEach(({client}) => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <Root/>
+    <App/>
   </Provider>, document.getElementById('root')
 );
 

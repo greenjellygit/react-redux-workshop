@@ -1,28 +1,22 @@
 import React from 'react';
 import {Redirect} from "react-router-dom";
-import styled from "styled-components";
-import SpinnerComponent from "../components/spinner.component";
+import Spinner from "../components/spinner";
 import {connect} from "react-redux";
 import {connectAllegro} from "../actions/authenticate.action";
 import {onComponentDidMount} from "react-redux-lifecycle";
 
-let AuthContainer = ({isAuthenticated}) => {
+let AuthorizationPage = ({isAuthenticated}) => {
   if (isAuthenticated) {
     return <Redirect to='/search'/>
   }
 
   return (
-    <Container>
+    <div className='auth-container'>
       <h2>Connecting with Allegro API</h2>
-      <SpinnerComponent inProgress={true}/>
-    </Container>
+      <Spinner inProgress={true}/>
+    </div>
   )
 };
-
-const Container = styled.div`
-  text-align: center;
-  margin-top: 100px;
-`;
 
 const mapStateToProps = state => ({
   isAuthenticated: state.authenticate.isAuthenticated,
@@ -33,5 +27,5 @@ const mapDispatchToProps = {
   connectAllegro,
 };
 
-AuthContainer = connect(mapStateToProps, mapDispatchToProps)(onComponentDidMount(connectAllegro)(AuthContainer));
-export default AuthContainer;
+AuthorizationPage = connect(mapStateToProps, mapDispatchToProps)(onComponentDidMount(connectAllegro)(AuthorizationPage));
+export default AuthorizationPage;
